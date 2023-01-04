@@ -22,7 +22,7 @@ fn set_max<R: Runtime>(window: tauri::Window<R>) {
 
 #[tauri::command]
 fn set_min<R: Runtime>(window: tauri::Window<R>) {
-    println!("Max resizeable!");
+    println!("Min resizeable!");
     window.set_min_size(Some(PhysicalSize { width: 400, height: 400 })).unwrap();
 }
 
